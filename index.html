@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-emerald-50">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -88,7 +88,7 @@
     </div>
 
     <!--main-->
-    <section class="w-11/12 mx-auto grid grid-cols-12 gap-4 h-screen pt-6">
+    <div class="w-11/12 mx-auto grid grid-cols-12 gap-4 h-screen pt-6">
       <!--main left side card section-->
       <div class="col-span-8 md:col-span-9">
         <!--card container-->
@@ -399,12 +399,32 @@
       </div>
 
       <!--main right side history/sidber section-->
-      <div class="col-span-4 md:col-span-3 bg-white">
-        <div>
-          <div><i class="fa-regular fa-clock"></i> Call History</div>
-          <div></div>
+      <div class="col-span-4 md:col-span-3 bg-white rounded-xl">
+        <!-- history header-->
+        <div class="flex justify-between p-2">
+          <div class="text-[10px] md:text-xl">
+            <i class="fa-regular fa-clock"></i> Call History
+          </div>
+          <button
+            class="bg-green-600 px-1 md:px-3 text-[10px] md:text-xl rounded-full text-white"
+          >
+            Clear
+          </button>
+        </div>
+        <!--dynamic history container-->
+        <div class="px-2">
+          <!--sidebar cart -->
+          <div
+            class="flex justify-between p-1 md:p-3 bg-slate-200 rounded-md mt-2"
+          >
+            <div>
+              <h1 class="text-[10px] md:text-sm">Fire Service Number</h1>
+              <p class="text-gray-400 text-[10px] md:text-sm">999</p>
+            </div>
+            <div class="text-[10px] md:text-sm">11:36:58 AM</div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>
