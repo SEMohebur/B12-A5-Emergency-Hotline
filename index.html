@@ -44,7 +44,7 @@
           <div
             class="flex justify-center items-center px-1 md:px-6 rounded-full gap-2 bg-green-50"
           >
-            <div>0</div>
+            <div id="heartCountDisply">0</div>
             <img class="h-[23px]" src="./assets/heart.png" alt="" />
           </div>
 
@@ -52,7 +52,7 @@
           <div
             class="flex justify-center items-center px-3 rounded-full gap-2 bg-green-50"
           >
-            <div>100</div>
+            <div id="coinDisplay">100</div>
             <img class="h-[23px]" src="./assets/coin.png" alt="" />
           </div>
           <!--copy btn-->
@@ -92,7 +92,10 @@
       <!--main left side card section-->
       <div class="col-span-8 md:col-span-9">
         <!--card container-->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div
+          id="card-container"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-3"
+        >
           <!--card 1 -->
           <div class="card rounded-xl shadow bg-white p-5">
             <!--card header icons-->
@@ -100,16 +103,21 @@
               <div class="bg-red-200 rounded-lg p-2">
                 <img class="h-[32px]" src="./assets/emergency.png" alt="" />
               </div>
-              <div><i class="fa-regular fa-heart"></i></div>
+              <div><i id="card-heart" class="fa-regular fa-heart"></i></div>
             </div>
             <!--card tite -->
-            <h1 class="font-bold mt-3">National Emergency Number</h1>
+            <h1 id="cardTitle" class="font-bold mt-3">
+              National Emergency Number
+            </h1>
             <p class="text-gray-500">National Emergency</p>
             <!--card contact-number-->
-            <div class="font-bold">999</div>
+            <div id="contactNumber" class="font-bold">999</div>
             <!--card contact category-->
             <div class="flex">
-              <div class="bg-slate-200 px-3 py-1 rounded-full text-center">
+              <div
+                id="contactCategory"
+                class="bg-slate-200 px-3 py-1 rounded-full text-center"
+              >
                 All
               </div>
             </div>
@@ -121,7 +129,7 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button class="px-5 bg-green-600 rounded-md text-white">
+              <button class="callBtn px-5 bg-green-600 rounded-md text-white">
                 <i class="fa-solid fa-phone text-sm"></i> Call
               </button>
             </div>
@@ -134,16 +142,21 @@
               <div class="bg-indigo-100 rounded-lg p-2">
                 <img class="h-[32px]" src="./assets/police.png" alt="" />
               </div>
-              <div><i class="fa-regular fa-heart"></i></div>
+              <div id="card-heart"><i class="fa-regular fa-heart"></i></div>
             </div>
             <!--card tite -->
-            <h1 class="font-bold mt-3">Police Helpline Number</h1>
+            <h1 id="cardTitle" class="font-bold mt-3">
+              Police Helpline Number
+            </h1>
             <p class="text-gray-500">Police</p>
             <!--card contact-number-->
-            <div class="font-bold">999</div>
+            <div id="contactNumber" class="font-bold">999</div>
             <!--card contact category-->
             <div class="flex">
-              <div class="bg-slate-200 px-3 py-1 rounded-full text-center">
+              <div
+                id="contactCategory"
+                class="bg-slate-200 px-3 py-1 rounded-full text-center"
+              >
                 police
               </div>
             </div>
@@ -151,11 +164,12 @@
             <div class="flex justify-center gap-2 mt-3">
               <!--copy buton-->
               <button
+                id="callBtn"
                 class="px-5 border border-gray-300 rounded-md text-gray-400"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button class="px-5 bg-green-600 rounded-md text-white">
+              <button class="callBtn px-5 bg-green-600 rounded-md text-white">
                 <i class="fa-solid fa-phone text-sm"></i> Call
               </button>
             </div>
@@ -168,16 +182,19 @@
               <div class="bg-red-200 rounded-lg p-2">
                 <img class="h-[32px]" src="./assets/fire-service.png" alt="" />
               </div>
-              <div><i class="fa-regular fa-heart"></i></div>
+              <div><i id="card-heart" class="fa-regular fa-heart"></i></div>
             </div>
             <!--card tite -->
-            <h1 class="font-bold mt-3">Fire Service Number</h1>
+            <h1 id="cardTitle" class="font-bold mt-3">Fire Service Number</h1>
             <p class="text-gray-500">Fire Service</p>
             <!--card contact-number-->
-            <div class="font-bold">999</div>
+            <div id="contactNumber" class="font-bold">999</div>
             <!--card contact category-->
             <div class="flex">
-              <div class="bg-slate-200 px-3 py-1 rounded-full text-center">
+              <div
+                id="contactCategory"
+                class="bg-slate-200 px-3 py-1 rounded-full text-center"
+              >
                 Fire
               </div>
             </div>
@@ -189,7 +206,7 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button class="px-5 bg-green-600 rounded-md text-white">
+              <button class="callBtn px-5 bg-green-600 rounded-md text-white">
                 <i class="fa-solid fa-phone text-sm"></i> Call
               </button>
             </div>
@@ -202,16 +219,19 @@
               <div class="bg-red-200 rounded-lg p-2">
                 <img class="h-[32px]" src="./assets/ambulance.png" alt="" />
               </div>
-              <div><i class="fa-regular fa-heart"></i></div>
+              <div><i id="card-heart" class="fa-regular fa-heart"></i></div>
             </div>
             <!--card tite -->
-            <h1 class="font-bold mt-3">Ambulance Service</h1>
+            <h1 id="cardTitle" class="font-bold mt-3">Ambulance Service</h1>
             <p class="text-gray-500">Ambulance</p>
             <!--card contact-number-->
-            <div class="font-bold">1994-999999</div>
+            <div id="contactNumber" class="font-bold">1994-999999</div>
             <!--card contact category-->
             <div class="flex">
-              <div class="bg-slate-200 px-3 py-1 rounded-full text-center">
+              <div
+                id="contactCategory"
+                class="bg-slate-200 px-3 py-1 rounded-full text-center"
+              >
                 Health
               </div>
             </div>
@@ -223,7 +243,7 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button class="px-5 bg-green-600 rounded-md text-white">
+              <button class="callBtn px-5 bg-green-600 rounded-md text-white">
                 <i class="fa-solid fa-phone text-sm"></i> Call
               </button>
             </div>
@@ -236,16 +256,21 @@
               <div class="bg-red-200 rounded-lg p-2">
                 <img class="h-[32px]" src="./assets/emergency.png" alt="" />
               </div>
-              <div><i class="fa-regular fa-heart"></i></div>
+              <div><i id="card-heart" class="fa-regular fa-heart"></i></div>
             </div>
             <!--card tite -->
-            <h1 class="font-bold mt-3">Women & Child Helpline</h1>
+            <h1 id="cardTitle" class="font-bold mt-3">
+              Women & Child Helpline
+            </h1>
             <p class="text-gray-500">Women & Child Helpline</p>
             <!--card contact-number-->
-            <div class="font-bold">109</div>
+            <div id="contactNumber" class="font-bold">109</div>
             <!--card contact category-->
             <div class="flex">
-              <div class="bg-slate-200 px-3 py-1 rounded-full text-center">
+              <div
+                id="contactCategory"
+                class="bg-slate-200 px-3 py-1 rounded-full text-center"
+              >
                 Help
               </div>
             </div>
@@ -257,7 +282,7 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button class="px-5 bg-green-600 rounded-md text-white">
+              <button class="callBtn px-5 bg-green-600 rounded-md text-white">
                 <i class="fa-solid fa-phone text-sm"></i> Call
               </button>
             </div>
@@ -270,16 +295,21 @@
               <div class="bg-red-200 rounded-lg p-2">
                 <img class="h-[32px]" src="./assets/emergency.png" alt="" />
               </div>
-              <div><i class="fa-regular fa-heart"></i></div>
+              <div><i id="card-heart" class="fa-regular fa-heart"></i></div>
             </div>
             <!--card tite -->
-            <h1 class="font-bold mt-3">Anti-Corruption Helpline</h1>
+            <h1 id="cardTitle" class="font-bold mt-3">
+              Anti-Corruption Helpline
+            </h1>
             <p class="text-gray-500">Anti-Corruption</p>
             <!--card contact-number-->
-            <div class="font-bold">106</div>
+            <div id="contactNumber" class="font-bold">106</div>
             <!--card contact category-->
             <div class="flex">
-              <div class="bg-slate-200 px-3 py-1 rounded-full text-center">
+              <div
+                id="contactCategory"
+                class="bg-slate-200 px-3 py-1 rounded-full text-center"
+              >
                 Govt.
               </div>
             </div>
@@ -291,7 +321,7 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button class="px-5 bg-green-600 rounded-md text-white">
+              <button class="callBtn px-5 bg-green-600 rounded-md text-white">
                 <i class="fa-solid fa-phone text-sm"></i> Call
               </button>
             </div>
@@ -303,16 +333,19 @@
               <div class="bg-red-200 rounded-lg p-2">
                 <img class="h-[32px]" src="./assets/emergency.png" alt="" />
               </div>
-              <div><i class="fa-regular fa-heart"></i></div>
+              <div><i id="card-heart" class="fa-regular fa-heart"></i></div>
             </div>
             <!--card tite -->
-            <h1 class="font-bold mt-3">Electricity Helpline</h1>
+            <h1 id="cardTitle" class="font-bold mt-3">Electricity Helpline</h1>
             <p class="text-gray-500">Electricity Outage</p>
             <!--card contact-number-->
-            <div class="font-bold">16216</div>
+            <div id="contactNumber" class="font-bold">16216</div>
             <!--card contact category-->
             <div class="flex">
-              <div class="bg-slate-200 px-3 py-1 rounded-full text-center">
+              <div
+                id="contactCategory"
+                class="bg-slate-200 px-3 py-1 rounded-full text-center"
+              >
                 Electricity
               </div>
             </div>
@@ -324,7 +357,7 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button class="px-5 bg-green-600 rounded-md text-white">
+              <button class="callBtn px-5 bg-green-600 rounded-md text-white">
                 <i class="fa-solid fa-phone text-sm"></i> Call
               </button>
             </div>
@@ -336,16 +369,19 @@
               <div class="bg-red-200 rounded-lg p-2">
                 <img class="h-[32px]" src="./assets/emergency.png" alt="" />
               </div>
-              <div><i class="fa-regular fa-heart"></i></div>
+              <div><i id="card-heart" class="fa-regular fa-heart"></i></div>
             </div>
             <!--card tite -->
-            <h1 class="font-bold mt-3">Brac Helpline</h1>
+            <h1 id="cardTitle" class="font-bold mt-3">Brac Helpline</h1>
             <p class="text-gray-500">Brac</p>
             <!--card contact-number-->
-            <div class="font-bold">16445</div>
+            <div id="contactNumber" class="font-bold">16445</div>
             <!--card contact category-->
             <div class="flex">
-              <div class="bg-slate-200 px-3 py-1 rounded-full text-center">
+              <div
+                id="contactCategory"
+                class="bg-slate-200 px-3 py-1 rounded-full text-center"
+              >
                 NGO
               </div>
             </div>
@@ -355,9 +391,9 @@
               <button
                 class="px-5 border border-gray-300 rounded-md text-gray-400"
               >
-                <i class="fa-solid fa-copy"></i> Copy
+                <i id="callIcon" class="fa-solid fa-copy"></i> Copy
               </button>
-              <button class="px-5 bg-green-600 rounded-md text-white">
+              <button class="callBtn px-5 bg-green-600 rounded-md text-white">
                 <i class="fa-solid fa-phone text-sm"></i> Call
               </button>
             </div>
@@ -369,16 +405,21 @@
               <div class="bg-red-200 rounded-lg p-2">
                 <img class="h-[32px]" src="./assets/emergency.png" alt="" />
               </div>
-              <div><i class="fa-regular fa-heart"></i></div>
+              <div><i id="card-heart" class="fa-regular fa-heart"></i></div>
             </div>
             <!--card tite -->
-            <h1 class="font-bold mt-3">Bangladesh Railway Helpline</h1>
+            <h1 id="cardTitle" class="font-bold mt-3">
+              Bangladesh Railway Helpline
+            </h1>
             <p class="text-gray-500">Bangladesh Railway</p>
             <!--card contact-number-->
-            <div class="font-bold">163</div>
+            <div id="contactNumber" class="font-bold">163</div>
             <!--card contact category-->
             <div class="flex">
-              <div class="bg-slate-200 px-3 py-1 rounded-full text-center">
+              <div
+                id="contactCategory"
+                class="bg-slate-200 px-3 py-1 rounded-full text-center"
+              >
                 Travel
               </div>
             </div>
@@ -390,7 +431,7 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button class="px-5 bg-green-600 rounded-md text-white">
+              <button class="callBtn px-5 bg-green-600 rounded-md text-white">
                 <i class="fa-solid fa-phone text-sm"></i> Call
               </button>
             </div>
@@ -406,25 +447,18 @@
             <i class="fa-regular fa-clock"></i> Call History
           </div>
           <button
+            id="clearBtn"
             class="bg-green-600 px-1 md:px-3 text-[10px] md:text-xl rounded-full text-white"
           >
             Clear
           </button>
         </div>
         <!--dynamic history container-->
-        <div class="px-2">
-          <!--sidebar cart -->
-          <div
-            class="flex justify-between p-1 md:p-3 bg-slate-200 rounded-md mt-2"
-          >
-            <div>
-              <h1 class="text-[10px] md:text-sm">Fire Service Number</h1>
-              <p class="text-gray-400 text-[10px] md:text-sm">999</p>
-            </div>
-            <div class="text-[10px] md:text-sm">11:36:58 AM</div>
-          </div>
+        <div id="sidberCartContainer" class="px-2">
+          <!--eikhane dynamic bhabe card add hobe  -->
         </div>
       </div>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
