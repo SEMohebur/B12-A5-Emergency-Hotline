@@ -58,6 +58,22 @@ getElement("card-container").addEventListener("click", function (e) {
       );
     }
   }
+
+  //copy button
+  if (e.target.className.includes("copyBtn")) {
+    const copyCounterDisply = getElement("copyCounterDisply");
+    const copyResConvertNum = parseInt(copyCounterDisply.innerText);
+    copyCounterDisply.innerText = copyResConvertNum + 1;
+    const cardInnerItems = e.target;
+    const cardTitle =
+      cardInnerItems.parentNode.parentNode.children[1].innerText;
+    const contactNumber =
+      cardInnerItems.parentNode.parentNode.children[3].innerText;
+    alert(` ${cardTitle} \n Number copied: ${contactNumber}`);
+
+    //copy number
+    navigator.clipboard.writeText(contactNumber);
+  }
 });
 
 //clearMethod button============================================
