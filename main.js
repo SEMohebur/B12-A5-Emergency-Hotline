@@ -43,9 +43,9 @@ getElement("card-container").addEventListener("click", function (e) {
       const newSidberCard = document.createElement("div");
       newSidberCard.innerHTML = `
           <div
-            class="flex justify-between p-1 md:p-3 bg-slate-200 rounded-md mt-2"
+            class="flex justify-between p-1 md:p-3 bg-slate-200 rounded-md mt-2 gap-2"
           >
-            <div>
+            <div class="">
               <h1 class="text-[10px] md:text-sm">${cardTitle}</h1>
               <p class="text-gray-400 text-[10px] md:text-sm">${contactNumber}</p>
             </div>
